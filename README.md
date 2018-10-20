@@ -1,4 +1,4 @@
-# advpng-bin [![Build Status](http://img.shields.io/travis/imagemin/advpng-bin.svg?style=flat)](https://travis-ci.org/imagemin/advpng-bin)
+# advzip-bin
 
 > Recompress ZIP files to their smallest possible sizes.
 
