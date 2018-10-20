@@ -31,7 +31,7 @@ $ advzip --help
 
 ## Inspiration
 
-Package structure lifted from the sister package ![advpng-bin](https://github.com/imagemin/advpng-bin).
+Package structure lifted from the sister package [advpng-bin](https://github.com/imagemin/advpng-bin).
 
 ## License
 
