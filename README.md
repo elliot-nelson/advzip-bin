@@ -29,6 +29,10 @@ $ npm install --global advzip-bin
 $ advzip --help
 ```
 
+## Inspiration
+
+Package structure lifted from the sister package ![advpng-bin](https://github.com/imagemin/advpng-bin).
+
 ## License
 
 Licensed under MIT. [Full license here &raquo;](LICENSE.txt)
