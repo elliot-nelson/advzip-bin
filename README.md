@@ -1,4 +1,4 @@
-# advzip-bin
+# advzip-bin [![Build Status](https://travis-ci.org/elliot-nelson/advzip-bin.svg?branch=master)](https://travis-ci.org/elliot-nelson/advzip-bin)
 
 > Recompress ZIP files to their smallest possible sizes.
 
