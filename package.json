@@ -1,6 +1,6 @@
 {
   "name": "advzip-bin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AdvZIP bin-wrapper that makes it seamlessly available as a local dependency",
   "license": "MIT",
   "repository": "elliot-nelson/advzip-bin",
@@ -9,7 +9,7 @@
     "advzip": "cli.js"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
     "postinstall": "node lib/install.js",
@@ -28,8 +28,8 @@
     "advzip"
   ],
   "dependencies": {
-    "bin-build": "^2.2.0",
-    "bin-wrapper": "^3.0.0",
+    "bin-build": "^3.0.0",
+    "bin-wrapper": "^4.1.0",
     "logalot": "^2.0.0"
   },
   "devDependencies": {

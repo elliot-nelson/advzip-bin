@@ -5,24 +5,23 @@ const path = require('path');
 const execa = require('execa');
 const tempy = require('tempy');
 const binCheck = require('bin-check');
-const BinBuild = require('bin-build');
+const binBuild = require('bin-build');
 const compareSize = require('compare-size');
 const advzip = require('..');
 
 describe('advzip', function () {
     it('builds from source', function (done) {
         const tmp = tempy.directory();
-        const builder = new BinBuild()
-            .src('https://github.com/amadvance/advancecomp/releases/download/v2.1/advancecomp-2.1.tar.gz')
-            .cmd('autoreconf -fiv')
-            .cmd(`./configure --prefix="${tmp}" --bindir="${tmp}"`)
-            .cmd('make install');
-
-        builder.run(err => {
-            expect(err).toBe(null);
+        binBuild.url('https://github.com/amadvance/advancecomp/releases/download/v2.1/advancecomp-2.1.tar.gz', [
+            'autoreconf -fiv',
+            `./configure --prefix="${tmp}" --bindir="${tmp}"`,
+            'make install'
+        ])
+        .then(() => {
             expect(fs.existsSync(path.join(tmp, 'advzip'))).toBe(true);
             done();
-        });
+        })
+        .catch(done.fail);
     }, 60000);
 
     it('returns a path to the binary and verifies it is working', function (done) {
