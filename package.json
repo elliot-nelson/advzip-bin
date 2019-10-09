@@ -1,6 +1,6 @@
 {
   "name": "advzip-bin",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "AdvZIP bin-wrapper that makes it seamlessly available as a local dependency",
   "license": "MIT",
   "repository": "elliot-nelson/advzip-bin",
